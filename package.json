@@ -1,0 +1,21 @@
+{
+  "name": "curter-core-svc",
+  "module": "src/main.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/main.ts",
+    "build": "bun build src/main.ts",
+    "start": "NODE_ENV=production bun src/main.ts",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/jwt": "^0.7.1",
+    "elysia": "^0.7.30"
+  }
+}
